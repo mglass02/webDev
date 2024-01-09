@@ -34,7 +34,7 @@ footer{
     height: 300px;
 }
 
-#ul {
+.ul {
     list-style-position: inside; 
     text-align: center; 
     padding: 0; 
