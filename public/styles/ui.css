@@ -1,0 +1,483 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+}
+
+/* Header Styles */
+.header {
+    background-color: #ffcc00; /* Pikachu Yellow */
+    color: #000; /* Black text */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
+.header__title {
+    margin: 0;
+    background-color: #000; /* Black background */
+    color: #ffcc00; /* Pikachu Yellow text */
+    padding: 10px 20px; /* Adjust padding as needed */
+    display: inline-block; /* Ensure padding applies correctly */
+    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.header__link {
+    font-weight: bold;
+}
+
+.header__menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header__menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header__dropdown {
+    position: relative;
+}
+
+.header__button {
+    background-color: #000; /* Black button */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.header__dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    min-width: 120px;
+    z-index: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.header__dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    color: #000; /* Black text */
+    text-decoration: none;
+}
+
+.header__dropdown-content a:hover {
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+.header__dropdown:hover .header__dropdown-content {
+    display: block;
+}
+
+.header__menu li a {
+    color: #000; /* Black text */
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+.main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro__title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray */
+}
+
+.intro__description {
+    margin-bottom: 40px;
+    color: #666; /* Gray */
+}
+
+.collections {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.collections__title{
+    text-align: center;
+}
+
+.collection {
+    background-color: #fff;
+    border: 1px solid #000; /* Black border */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 40px);
+    transition: transform 0.3s ease;
+}
+
+.collection:hover {
+    transform: translateY(-5px);
+}
+
+.collection h3 {
+    margin-top: 0;
+    color: #333; /* Black text */
+}
+
+.button {
+    background-color: #ffcc00; /* Pikachu Yellow */
+    color: #000; /* Black text */
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffd633; /* Pikachu Dark Yellow */
+}
+
+footer {
+    background-color: #000; /* Black */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer__text {
+    margin: 0;
+}
+
+/* About Page */
+.main.about {
+    padding: 20px;
+}
+
+/* Contact Page */
+.main.contact {
+    padding: 20px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form__title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Cards Page */
+.main.cards {
+    padding: 20px;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    position: relative; /* For positioning the image */
+    text-align: center; /* To center align title and price */
+}
+
+.card__image {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card__title {
+    margin-top: 10px;
+    color: #333; /* Dark gray */
+}
+
+.card__price {
+    margin-bottom: 10px;
+    color: #666; /* Gray */
+}
+
+.add-to-wishlist {
+    margin: 0 auto; /* Center the buttons horizontally */
+    display: block; /* Ensure the buttons stack vertically */
+    font-weight: bold; /* Make buttons bold */
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.card__quantity {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card__wishlist {
+    background-color: #ffcc00; /* Pikachu Yellow */
+    color: #000; /* Black text */
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card__wishlist:hover {
+    background-color: #ffd633; /* Pikachu Dark Yellow */
+}
+
+/* Account Page */
+.account {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+.account__title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray */
+}
+
+.account-details p,
+.account-options button,
+.account-options a {
+    margin-bottom: 10px;
+}
+
+.account-options button,
+.account-options a {
+    display: block;
+    width: 20%;
+}
+
+.button.change-password,
+.button.log-out {
+    margin: 0 auto; /* Center the buttons horizontally */
+    display: block; /* Ensure the buttons stack vertically */
+    font-weight: bold; /* Make buttons bold */
+    margin-top: 10px;
+    background-color: #ffcc00; /* Pikachu Yellow */
+    color: #000; /* Black text */
+    padding: 8px 15px;
+    border: solid black 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.button.change-password:hover,
+.button.log-out:hover {
+    background-color: #ffd633; /* Pikachu Dark Yellow */
+}
+
+/* Wishlist Page */
+.wishlist__title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray */
+}
+
+.wishlist-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.wishlist-card {
+    background-color: #fff;
+    border: 1px solid #000; /* Black border */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 40px);
+    transition: transform 0.3s ease;
+}
+
+.wishlist-card:hover {
+    transform: translateY(-5px);
+}
+
+.wishlist-card h3 {
+    margin-top: 0;
+    color: #333; /* Black text */
+}
+
+/* Create Account Page */
+.create-account {
+    padding: 20px;
+}
+
+.account-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: none;
+    padding: 20px;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+.create-account__button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffcc00; /* Pikachu Yellow */
+    color: #000; /* Black text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-account__button:hover {
+    background-color: #ffd633; /* Pikachu Dark Yellow */
+}
+
+/* Login Page */
+.login {
+    padding: 20px;
+}
+
+.login-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: none;
+    padding: 20px;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none; /* Remove border */
+    border-radius: 5px;
+    background-color: #f3f3f3; /* Light gray background */
+}
+
+.login__button {
+    display: block;
+    text-align: center;
+    width: 40%; /* Adjust width as needed */
+    padding: 10px;
+    background-color: #ffcc00; /* Pikachu Yellow */
+    color: #000; /* Black text */
+    border: 2px solid #000; /* Black border */
+    margin: 5px auto; /* Center horizontally */
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: medium;
+    transition: background-color 0.3s ease;
+}
+
+.login__button:hover {
+    background-color: #ffd633; /* Pikachu Dark Yellow */
+}
+
+/* Navigation Menu Styles */
+/* Add border around the container li.nav-border */
+.header__menu .nav-border {
+    border: 1px solid #000; /* Black border */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+/* Remove bullets for the items within the container */
+.header__menu .nav-border a {
+    list-style: none;
+}
+
+/* Adjust spacing between the items */
+.header__menu .nav-border a + a {
+    margin-left: 10px;
+}
