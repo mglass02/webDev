@@ -67,15 +67,17 @@ app.post('/contact', (req, res) => {
 
     // You can process the email data here
     // For now, let's just log the data to the console
+    console.log('---------------------------')
     console.log('Received contact form submission:');
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Message:', message);
+    console.log(' - Name:', name);
+    console.log(' - Email:', email);
+    console.log(' - Message:', message);
 
     // Optionally, you can send an email notification here
 
-    // Send a response back to the client
-    res.send('Message received! We will get back to you soon.');
+    // Send the "Thanks for contacting us, we will reply soon!" message
+    res.send("Thanks for contacting us, we will reply soon!");
+
 });
 
 // Start the server

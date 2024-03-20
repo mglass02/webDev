@@ -183,6 +183,54 @@ footer {
     padding: 20px;
 }
 
+/* Style for the introduction section */
+.intro_about {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.intro__title_about {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.intro__description_about {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.section__subtitle_about {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.feature-list_about {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.feature-list_about li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.join-message_about {
+    font-size: 18px;
+    color: #333;
+    font-style: italic;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
 /* Contact Page */
 .main.contact {
     padding: 20px;
