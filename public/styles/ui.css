@@ -171,6 +171,13 @@ footer {
     margin: 0;
 }
 
+.footer__email{
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    font-weight: bold;
+}
+
 /* About Page */
 .main.about {
     padding: 20px;

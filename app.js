@@ -61,8 +61,7 @@ app.get('/account', (req, res) => {
     res.render('account'); // Render the about.ejs file
 });
 
-
-// Handle form submission
+// Handle contact form submission
 app.post('/contact', (req, res) => {
     const { name, email, message } = req.body;
 
