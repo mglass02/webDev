@@ -2,12 +2,13 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware to parse JSON bodies
-app.use(bodyParser.json());
+// Body parser middleware
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Set view engine to EJS
 app.set('view engine', 'ejs');
@@ -39,7 +40,6 @@ app.get('/cards', (req, res) => {
     res.render('cards'); // Render the about.ejs file
 });
 
-
 app.get('/signUp', (req, res) => {
     res.render('signUp'); // Render the about.ejs file
 });
@@ -59,6 +59,24 @@ app.get('/collection', (req, res) => {
 
 app.get('/account', (req, res) => {
     res.render('account'); // Render the about.ejs file
+});
+
+
+// Handle form submission
+app.post('/contact', (req, res) => {
+    const { name, email, message } = req.body;
+
+    // You can process the email data here
+    // For now, let's just log the data to the console
+    console.log('Received contact form submission:');
+    console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Message:', message);
+
+    // Optionally, you can send an email notification here
+
+    // Send a response back to the client
+    res.send('Message received! We will get back to you soon.');
 });
 
 // Start the server

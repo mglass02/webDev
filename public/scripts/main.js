@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Example: Check if user is logged in (replace with your actual login status check)
-    var isLoggedIn = false; // Assume user is not logged in
+    var isLoggedIn = true; // Assume user is not logged in
     updateNavigation(isLoggedIn);
 });
 
