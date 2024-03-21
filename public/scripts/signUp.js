@@ -63,4 +63,4 @@ function isValidEmail(email) {
 }
 
 
-// allow user to see password as typing it in
+// TODO: allow user to see password as typing it in

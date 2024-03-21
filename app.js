@@ -73,6 +73,7 @@ app.post('/contact', (req, res) => {
     console.log(' - Message:', message);
     
     res.send("Thanks for contacting us, we will reply soon!");
+    
 
 });
 
