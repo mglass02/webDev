@@ -3,26 +3,26 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff; /* White background */
-    color: #000; /* Black text */
+    background-color: #fff; 
+    color: #000;
 }
 
 /* Header Styles */
 .header {
-    background-color: #ffcc00; /* Pikachu Yellow */
-    color: #000; /* Black text */
+    background-color: #ffcc00; 
+    color: #000; 
     padding: 20px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Drop shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .header__title {
     margin: 0;
-    background-color: #000; /* Black background */
-    color: #ffcc00; /* Pikachu Yellow text */
-    padding: 10px 20px; /* Adjust padding as needed */
-    display: inline-block; /* Ensure padding applies correctly */
-    border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+    background-color: #000; 
+    color: #ffcc00; 
+    padding: 10px 20px; 
+    display: inline-block; 
+    border-radius: 5px; 
 }
 
 .header__nav {
@@ -50,8 +50,8 @@ body {
 }
 
 .header__button {
-    background-color: #000; /* Black button */
-    color: #fff; /* White text */
+    background-color: #000; 
+    color: #fff; 
     padding: 10px 20px;
     margin-top: 20px;
     border-radius: 20px;
@@ -73,12 +73,12 @@ body {
 .header__dropdown-content a {
     display: block;
     padding: 10px 20px;
-    color: #000; /* Black text */
+    color: #000; 
     text-decoration: none;
 }
 
 .header__dropdown-content a:hover {
-    background-color: #f4f4f4; /* Light gray background */
+    background-color: #f4f4f4; 
 }
 
 .header__dropdown:hover .header__dropdown-content {
@@ -86,7 +86,7 @@ body {
 }
 
 .header__menu li a {
-    color: #000; /* Black text */
+    color: #000; 
     text-decoration: none;
 }
 
@@ -102,12 +102,12 @@ body {
 .intro__title {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #333; /* Dark gray */
+    color: #333; 
 }
 
 .intro__description {
     margin-bottom: 40px;
-    color: #666; /* Gray */
+    color: #666; 
 }
 
 .collections-home {
@@ -123,7 +123,7 @@ body {
 
 .collection-home {
     background-color: #fff;
-    border: 1px solid #000; /* Black border */
+    border: 1px solid #000; 
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -138,12 +138,12 @@ body {
 
 .collection-home h3 {
     margin-top: 0;
-    color: #333; /* Black text */
+    color: #333; 
 }
 
 .button {
-    background-color: #ffcc00; /* Pikachu Yellow */
-    color: #000; /* Black text */
+    background-color: #ffcc00; 
+    color: #000; 
     text-decoration: none;
     display: inline-block;
     border-radius: 5px;
@@ -155,12 +155,12 @@ body {
 }
 
 .button:hover {
-    background-color: #ffd633; /* Pikachu Dark Yellow */
+    background-color: #ffd633; 
 }
 
 footer {
-    background-color: #000; /* Black */
-    color: #fff; /* White text */
+    background-color: #000; 
+    color: #fff; 
     text-align: center;
     padding: 20px;
     margin-top: 40px;
@@ -245,7 +245,7 @@ footer {
     text-align: center;
     font-size: 36px;
     margin-bottom: 20px;
-    color: #333; /* Dark gray */
+    color: #333; 
 }
 
 .form-group {
@@ -262,12 +262,12 @@ input[type="email"],
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd; /* Light gray border */
+    border: 1px solid #ddd; 
     border-radius: 5px;
 }
 
 textarea {
-    resize: vertical; /* Allow vertical resizing */
+    resize: vertical; 
 }
 
 /* Cards Page */
@@ -282,8 +282,8 @@ textarea {
 }
 
 .card {
-    position: relative; /* For positioning the image */
-    text-align: center; /* To center align title and price */
+    position: relative; 
+    text-align: center; 
 }
 
 .card__image {
@@ -293,18 +293,18 @@ textarea {
 
 .card__title {
     margin-top: 10px;
-    color: #333; /* Dark gray */
+    color: #333; 
 }
 
 .card__price {
     margin-bottom: 10px;
-    color: #666; /* Gray */
+    color: #666; 
 }
 
 .add-to-wishlist {
-    margin: 0 auto; /* Center the buttons horizontally */
-    display: block; /* Ensure the buttons stack vertically */
-    font-weight: bold; /* Make buttons bold */
+    margin: 0 auto; 
+    display: block; 
+    font-weight: bold; 
     margin-top: 10px;
     cursor: pointer;
 }
@@ -312,14 +312,14 @@ textarea {
 .card__quantity {
     width: 50px;
     padding: 5px;
-    border: 1px solid #ddd; /* Light gray border */
+    border: 1px solid #ddd; 
     border-radius: 5px;
     text-align: center;
 }
 
 .card__wishlist {
-    background-color: #ffcc00; /* Pikachu Yellow */
-    color: #000; /* Black text */
+    background-color: #ffcc00; 
+    color: #000; 
     padding: 8px 15px;
     border: none;
     border-radius: 5px;
@@ -328,7 +328,7 @@ textarea {
 }
 
 .card__wishlist:hover {
-    background-color: #ffd633; /* Pikachu Dark Yellow */
+    background-color: #ffd633; 
 }
 
 /* Account Page */
@@ -344,7 +344,7 @@ textarea {
 .account__title {
     text-align: center;
     margin-bottom: 20px;
-    color: #333; /* Dark gray */
+    color: #333; 
 }
 
 .account-details p,
@@ -362,13 +362,13 @@ textarea {
 .button.change-password,
 .button.log-out,
 .button.delete-account {
-    margin: 0 auto; /* Center the buttons horizontally */
-    display: block; /* Ensure the buttons stack vertically */
-    font-weight: bold; /* Make buttons bold */
+    margin: 0 auto; 
+    display: block; 
+    font-weight: bold; 
     font-size: small;
     margin-top: 10px;
-    background-color: #ffcc00; /* Pikachu Yellow */
-    color: #000; /* Black text */
+    background-color: #ffcc00; 
+    color: #000;
     padding: 4px 20px;
     border: solid black 2px;
     border-radius: 5px;
@@ -379,14 +379,14 @@ textarea {
 
 .button.change-password:hover,
 .button.log-out:hover {
-    background-color: #ffd633; /* Pikachu Dark Yellow */
+    background-color: #ffd633; 
 }
 
 /* Wishlist Page */
 .wishlist__title {
     text-align: center;
     margin-bottom: 20px;
-    color: #333; /* Dark gray */
+    color: #333; 
 }
 
 .wishlist-cards {
@@ -397,7 +397,7 @@ textarea {
 
 .wishlist-card {
     background-color: #fff;
-    border: 1px solid #000; /* Black border */
+    border: 1px solid #000; 
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -412,7 +412,7 @@ textarea {
 
 .wishlist-card h3 {
     margin-top: 0;
-    color: #333; /* Black text */
+    color: #333; 
 }
 
 /* Create Account Page */
@@ -457,8 +457,8 @@ textarea {
 .create-account__button {
     display: block;
     width: 100%;
-    background-color: #ffcc00; /* Pikachu Yellow */
-    color: #000; /* Black text */
+    background-color: #ffcc00; 
+    color: #000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -470,7 +470,7 @@ textarea {
 }
 
 .create-account__button:hover {
-    background-color: #ffd633; /* Pikachu Dark Yellow */
+    background-color: #ffd633; 
 }
 
 /* Login Page */
@@ -503,18 +503,18 @@ textarea {
 .form-group input {
     width: 100%;
     padding: 10px;
-    border: none; /* Remove border */
+    border: none; 
     border-radius: 5px;
-    background-color: #f3f3f3; /* Light gray background */
+    background-color: #f3f3f3; 
 }
 
 .login__button {
     display: block;
     text-align: center;
-    width: 40%; /* Adjust width as needed */
-    background-color: #ffcc00; /* Pikachu Yellow */
-    color: #000; /* Black text */
-    margin: 5px auto; /* Center horizontally */
+    width: 40%; 
+    background-color: #ffcc00; 
+    color: #000; 
+    margin: 5px auto; 
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -525,23 +525,19 @@ textarea {
 }
 
 .login__button:hover {
-    background-color: #ffd633; /* Pikachu Dark Yellow */
+    background-color: #ffd633; 
 }
 
-/* Navigation Menu Styles */
-/* Add border around the container li.nav-border */
 .header__menu .nav-border {
-    border: 1px solid #000; /* Black border */
-    border-radius: 5px; /* Optional: Add border radius for rounded corners */
-    padding: 10px; /* Adjust padding as needed */
+    border: 1px solid #000; 
+    border-radius: 5px; 
+    padding: 10px; 
 }
 
-/* Remove bullets for the items within the container */
 .header__menu .nav-border a {
     list-style: none;
 }
 
-/* Adjust spacing between the items */
 .header__menu .nav-border a + a {
     margin-left: 10px;
 }
