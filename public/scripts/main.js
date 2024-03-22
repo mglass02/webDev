@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    
+    // set to logged in
     var isLoggedIn = true; 
     updateNavigation(isLoggedIn);
 });

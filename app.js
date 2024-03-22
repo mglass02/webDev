@@ -1,14 +1,12 @@
 // Import required modules
 const express = require('express');
 const path = require('path');
+const mysql = require('mysql');
 const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Body parser middleware
-app.use(bodyParser.urlencoded({ extended: true }));
 
 // Set view engine to EJS
 app.set('view engine', 'ejs');
@@ -18,6 +16,11 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
+
+
+// Middleware for parsing JSON and URL-encoded form data
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // Define routes
 app.get('/', (req, res) => {
@@ -72,9 +75,40 @@ app.post('/contact', (req, res) => {
     console.log(' - Email:', email);
     console.log(' - Message:', message);
     
-    res.send("Thanks for contacting us, we will reply soon!");
+    res.send("Thanks for contacting us, we will reply soon!\nIn the meantime hit back to continue on the site");
     
+});
 
+// database info 
+    //host: 'localhost',
+    //user: 'root',
+    //database: 'pok_project',
+    //password: 'xme%559MG'
+    
+// Handle sign up form submission
+app.post('/signUp', (req, res) => {
+    const { username, email, password } = req.body;
+    const signUpDate = new Date(); // Get the current date and time
+
+    // Extract year, month, and day components
+    const year = signUpDate.getFullYear();
+    const month = signUpDate.getMonth() + 1; // Adding 1 because getMonth() returns 0-based index (0 for January)
+    const day = signUpDate.getDate();
+
+    // Format the date as "year/month/day"
+    const formattedDate = `${year}/${month}/${day}`;
+
+    // Logging data to console for MVP (CHANGE LATER)  
+    console.log('---------------------------');
+    console.log('New user has signed up:');
+    console.log(' - Username:', username);
+    console.log(' - Email:', email);
+    console.log(' - Password:', password);
+    console.log(' - Sign Up Date:', formattedDate); // Print the formatted date
+
+    setTimeout(() => {
+        res.redirect('http://localhost:3000/home?message=Thanks+for+signing+up');
+    }, 1000); 
 });
 
 // Start the server
