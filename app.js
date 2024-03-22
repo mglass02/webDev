@@ -84,7 +84,7 @@ app.post('/contact', (req, res) => {
     //user: 'root',
     //database: 'pok_project',
     //password: 'xme%559MG'
-    
+
 // Handle sign up form submission
 app.post('/signUp', (req, res) => {
     const { username, email, password } = req.body;
@@ -109,6 +109,22 @@ app.post('/signUp', (req, res) => {
     setTimeout(() => {
         res.redirect('http://localhost:3000/home?message=Thanks+for+signing+up');
     }, 1000); 
+});
+
+// handle log in form submission
+app.post('/logIn', (req, res) => {
+    const { uNameOrEmail, password } = req.body;
+
+    // Logging data to console for MVP (CHANGE LATER)  
+    console.log('---------------------------');
+    console.log('Member has attempted log in:');
+    console.log(' - Username/email:', uNameOrEmail);
+    console.log(' - Password:', password);
+
+    setTimeout(() => {
+        res.redirect('http://localhost:3000/home?message=You+are+logged+in');
+    }, 1000); 
+
 });
 
 // Start the server
